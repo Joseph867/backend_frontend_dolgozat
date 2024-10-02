@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <h1>Digitális Képkeret</h1>
+      <div>
+          <label for="url">A kép URL-je</label>
+          <input type="url" id="inputUrl" class="form-control">
+      </div>
+      <div>
+          <label for="szelesseg">A kép szélessége (pixelben megadva)</label>
+          <input type="number" id="szelesseg" class="form-control">
+      </div>
+      <div>
+          <label for="keret">A képkeret vastagsága</label>
+          <input type="number" id="keret" class="form-control">
+      </div>
+      <div>
+          <label for="borderColor">A képkeret színe</label>
+          <input type="color" id="borderColor" class="form-control">
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary" id="gomb">Mehet</button>
+      </div>
+      <div>
+        <img src="O89vfci.jpeg" alt="Test image" id="cat">
+      </div>
+    </div>
+  </body>
+  <footer class="container mx-auto">
+    <p>Gallai József, 14/S</p>
+    <button class="btn btn-primary" id="toggleDarkMode">Téma váltás</button>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</html>
